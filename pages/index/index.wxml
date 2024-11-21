@@ -1,0 +1,21 @@
+<view class="container">
+  <list-scroll
+    id="list-scroll"
+    hasMore="{{ hasMore }}"
+    total="{{ total }}"
+    loading="{{ loading }}"
+    bind:refresh="onRefresh"
+    bind:loadmore="onLoadMore"
+  >
+    <view class="article-list">
+      <view class="article-item" wx:for="{{ list }}" wx:key="id">
+        <view class="article-title">{{ item.title }}</view>
+        <view class="article-desc">{{ item.description }}</view>
+        <view class="article-meta">
+          <text class="article-author">{{ item.author }}</text>
+          <text class="article-date">{{ item.date }}</text>
+        </view>
+      </view>
+    </view>
+  </list-scroll>
+</view>

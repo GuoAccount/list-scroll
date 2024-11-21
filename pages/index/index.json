@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "list-scroll": "/components/list-scroll/list-scroll"
+  }
+}

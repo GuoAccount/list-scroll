@@ -1,0 +1,14 @@
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Mini Program specific
+miniprogram_npm/
+node_modules/
+project.private.config.json
+
+# System files
+.DS_Store
+Thumbs.db
